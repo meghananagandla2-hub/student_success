@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Success Platform</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>🎓 Student Success Platform</h1><span>Analytics &amp; AI-powered decision intelligence</span></header>
+<section class="filters">
+<select id="fDept"></select><select id="fYear"></select><select id="fRisk"></select><select id="fSeg"></select>
+<input id="fSearch" placeholder="Search name / ID…"><button id="reset">Reset</button></section>
+<section class="kpis" id="kpis"></section>
+<section class="grid">
+<div class="card"><h3>Success Score distribution</h3><div id="cHist"></div></div>
+<div class="card"><h3>Risk by department</h3><div id="cDept"></div></div>
+<div class="card"><h3>Segments <small>(click to filter)</small></h3><div id="cSeg"></div></div>
+<div class="card"><h3>Attendance vs CGPA <small>(colour = risk)</small></h3><div id="cScat"></div></div>
+<div class="card wide"><h3>Average indicator score (orange = below 65 target)</h3><div id="cInd"></div></div>
+</section>
+<section><div class="card"><h3>Students <small id="count"></small> <small>— click a row for explanation</small></h3>
+<div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody></table></div></div></section>
+<aside id="panel" class="hidden"></aside>
+<script src="data.js"></script><script src="app.js"></script></body></html>
